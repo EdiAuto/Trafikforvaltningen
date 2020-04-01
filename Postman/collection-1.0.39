@@ -1,0 +1,59 @@
+{
+	"info": {
+		"_postman_id": "368f1234-9a16-4d86-b682-cc417df1e62f",
+		"name": "sl-open-transport-information - Edi",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Search Trips (sl-open-transport-information) - siteids",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Client-Id",
+						"value": "{{app.client_id}}"
+					},
+					{
+						"key": "Client-Secret",
+						"value": "{{app.client_secret}}"
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"origin_site_id\": 9192,\n\t\"dest_site_id\": 9295\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://10.202.1.2/sl-open-transport-information/v1/trip-planner/trip-searches",
+					"protocol": "http",
+					"host": [
+						"10",
+						"202",
+						"1",
+						"2"
+					],
+					"path": [
+						"sl-open-transport-information",
+						"v1",
+						"trip-planner",
+						"trip-searches"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
+Collapse
